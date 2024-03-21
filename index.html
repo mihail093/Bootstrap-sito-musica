@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Vibes</title>
+    <!--Inserisco il tag link per il CSS di Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar (aggiunto: mb-5, fixed-top e sostituito la classe per il colore di background con bg-warning)-->
+    <!--La scritta "Vinyl Vibes" l'ho messa in grassetto e ho aumentato leggermente il font-size-->
+    <nav class="navbar navbar-expand-lg bg-warning mb-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-4" href="#">Vinyl Vibes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Albums
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#cinque">5-8</a></li>
+                  <li><a class="dropdown-item" href="#nove">9-12</a></li>
+                  <li><a class="dropdown-item" href="#tredici">13-16</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--CARDS-->
+    <!--Ho modificato le cards originali cancellando parti che non mi servivano, ho aggiunto a tutte un margine superiore e un padding (superiore e inferiore)-->
+    <!--HO aggiunto la classe per il testo in grassetto a tutti i titoli degli album-->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Dark_Side_of_the_Moon.png" class="card-img-top" alt="album Dark Side of the Moon - Pink Floyd">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Dark Side of the Moon</h5>
+                      <p class="card-text">Dark Side of the Moon by Pink Floyd is a transcendent masterpiece exploring themes of existentialism, time, and human experience. With its groundbreaking blend of progressive rock, jazz, and experimental sounds, it delves into the depths of the mind, inviting listeners on an introspective journey through the complexities of life. From its haunting lyrics to its innovative use of sound effects, the album remains a timeless classic, resonating with audiences across generations.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Pink Floyd</li>
+                      <li class="list-group-item">progressive rock/psychedelic rock</li>
+                      <li class="list-group-item">length: 42:50</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Tool_-_Lateralus.jpg" class="card-img-top" alt="album Lateralus - Tool">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Lateralus</h5>
+                      <p class="card-text">Lateralus by Tool is a sonic odyssey that pushes the boundaries of progressive metal, blending intricate rhythms, hypnotic melodies, and profound lyrical themes. The album's meticulous craftsmanship and conceptual depth invite listeners to embark on a transformative journey of self-discovery and enlightenment. With its complex time signatures and thought-provoking lyrics, "Lateralus" stands as a testament to Tool's artistic innovation and enduring influence in the realm of alternative music.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Tool</li>
+                      <li class="list-group-item">progressive metal/progressive rock/art rock/alternative metal</li>
+                      <li class="list-group-item">length: 78:51</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/The_Doors_-_Morrison_Hotel.jpg" class="card-img-top" alt="album Morrison Hotel - The Doors">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Morrison Hotel</h5>
+                      <p class="card-text">Morrison Hotel by The Doors, released in 1970, is a gritty and bluesy rock album that showcases Jim Morrison's raw vocal power and poetic lyricism. With tracks like "Roadhouse Blues" and "Peace Frog," the album delves into themes of rebellion, love, and societal disillusionment, capturing the essence of the late 1960s counterculture. Its raw energy and musical diversity make it a timeless classic in The Doors' discography.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">The Doors</li>
+                      <li class="list-group-item">blues rock/psychedelia/R&B</li>
+                      <li class="list-group-item">length: 37:05</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Discipline_-_Original_Vinyl_Cover.jpg" class="card-img-top" alt="album Discipline - King Crimson">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Discipline</h5>
+                      <p class="card-text">Discipline by King Crimson is a groundbreaking fusion of new wave, prog-rock, and avant-garde jazz. Released in 1981, it showcases intricate polyrhythms, innovative guitar work by Robert Fripp, and Adrian Belew's distinctive vocal style. Its complex compositions and experimental soundscapes make it a seminal album in the band's discography.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">King Crimson</li>
+                      <li class="list-group-item">art rock/progressive rock/new wave/post-progressive/dance-rock</li>
+                      <li class="list-group-item">length: 38:15</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Copia e incolla del 'div' con classe 'container'-->
+    <div id="cinque" class="container mt-5 py-3">
+        <div class="row">
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/When_We_All_Fall_Asleep,_Where_Do_We_Go .png" class="card-img-top" alt="album When We All Fall Asleep, Where Do We Go? - Billie Eilish">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">When We All Fall Asleep, Where Do We Go?</h5>
+                      <p class="card-text">When We All Fall Asleep, Where Do We Go? by Billie Eilish is a dark and genre-bending debut album released in 2019. Eilish's whispery vocals paired with Finneas O'Connell's production create an eerie yet captivating atmosphere throughout the record. Its blend of pop, electropop, and trap influences, along with introspective lyrics, solidify Eilish's status as a unique and innovative artist.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Billie Eilish</li>
+                      <li class="list-group-item">pop/electropop/avant-pop/art pop/alt-pop</li>
+                      <li class="list-group-item">length: 42:55</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Radioheadokcomputer.png" class="card-img-top" alt="album OK Computer - Radiohead">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">OK Computer</h5>
+                      <p class="card-text">OK Computer by Radiohead, released in 1997, is a seminal album that defies genre boundaries, blending alternative rock, electronic, and experimental sounds. Its dystopian themes, introspective lyrics, and innovative production techniques push the boundaries of contemporary music, solidifying Radiohead's status as one of the most influential bands of the era. With tracks like "Paranoid Android" and "Karma Police," the album delivers a haunting yet thought-provoking journey through the complexities of modern life.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Radiohead</li>
+                      <li class="list-group-item">art rock/alternative rock/post-Britpop</li>
+                      <li class="list-group-item">length: 53:21</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Gorillaz_Demon_Days.PNG" class="card-img-top" alt="album Demon Days - Gorillaz">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Demon Days</h5>
+                      <p class="card-text">Demon Days by Gorillaz, released in 2005, is a genre-bending masterpiece that seamlessly blends elements of alternative rock, hip-hop, electronica, and pop. With its eclectic soundscapes and socially conscious lyrics, the album offers a captivating sonic journey through themes of isolation, political commentary, and existentialism. Featuring hits like "Feel Good Inc." and "DARE," "Demon Days" solidifies Gorillaz's status as pioneers of experimental music in the digital age.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Gorillaz</li>
+                      <li class="list-group-item">alternative rock/hip hop/trip hop/pop/art rock</li>
+                      <li class="list-group-item">length: 51:42</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/NirvanaNevermindalbumcover.jpg" class="card-img-top" alt="album Nevermind - Nirvana">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Nevermind</h5>
+                      <p class="card-text">Nevermind by Nirvana, released in 1991, revolutionized the music industry with its raw energy, melodic hooks, and grunge aesthetic. Led by Kurt Cobain's angst-ridden vocals and Dave Grohl's powerhouse drumming, the album's iconic tracks like "Smells Like Teen Spirit" and "Come As You Are" became anthems for a generation. Its impact on alternative rock and pop culture remains unparalleled, cementing Nirvana's legacy as one of the most influential bands of all time.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Nirvana</li>
+                      <li class="list-group-item">grunge/alternative rock</li>
+                      <li class="list-group-item">length: 42:36 (49:07 with hidden track)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Copia e incolla del 'div' con classe 'container'-->
+    <div id="nove" class="container mt-5 py-3">
+        <div class="row">
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Alleyezonme.jpg" class="card-img-top" alt="album All Eyez on Me - 2Pac">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">All Eyez on Me</h5>
+                      <p class="card-text">All Eyez on Me by 2Pac, released in 1996, is a double album that solidifies Tupac Shakur's status as a rap legend. With its blend of West Coast gangsta rap and introspective storytelling, the album tackles themes of street life, fame, and social injustice. Featuring hits like "California Love" and "Ambitionz Az a Ridah," it remains a timeless masterpiece in hip-hop history.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">2Pac</li>
+                      <li class="list-group-item">west coast hip hop/gangsta rap/g-funk</li>
+                      <li class="list-group-item">length: 132:20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/DS_Brothers_in_Arms.jpg" class="card-img-top" alt="album Brothers in Arms - Dire Straits">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Brothers in Arms</h5>
+                      <p class="card-text">"Brothers in Arms" by Dire Straits, released in 1985, is a landmark album renowned for its exceptional musicianship and production quality. With hits like "Money for Nothing" and "Walk of Life," it seamlessly blends rock, pop, and blues influences, showcasing Mark Knopfler's virtuosic guitar work. Its introspective lyrics and cinematic soundscapes solidify its status as one of the best-selling and critically acclaimed albums of all time.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Dire Straits</li>
+                      <li class="list-group-item">pop rock/new wave/soft rock/jazz rock/rock and roll</li>
+                      <li class="list-group-item">length: 55:11 (45:40 vinyl)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Mazzy_Star-So_Tonight_That_I_Might_See.jpg" class="card-img-top" alt="album So Tonight That I Might See - Mazzy Star">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">So Tonight That I Might See</h5>
+                      <p class="card-text">So Tonight That I Might See by Mazzy Star is a dreamy journey through ethereal melodies and haunting vocals, enveloping listeners in a melancholic yet mesmerizing atmosphere. With its lush instrumentation and Mazzy Star's signature blend of folk, psychedelic, and dream pop elements, the album evokes a sense of introspection and longing, inviting listeners to immerse themselves in its rich sonic landscapes and reflective lyrics. From the hypnotic allure of "Fade into You" to the atmospheric depths of "Into Dust," each track captures the essence of nocturnal beauty and emotional resonance, making it a timeless classic in the realm of alternative music.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Mazzy Star</li>
+                      <li class="list-group-item">dream pop/neo-psychedelia</li>
+                      <li class="list-group-item">length: 51:36</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/R.E.M._-_Part_Lies,_Part_Heart,_Part_Truth,_Part_Garbage_1982-2011.jpg" class="card-img-top" alt="greatest hits album Part Lies, Part Heart, Part Truth, Part Garbage - R.E.M.">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Part Lies, Part Heart, Part Truth, Part Garbage</h5>
+                      <p class="card-text">Part Lies, Part Heart, Part Truth, Part Garbage by R.E.M. is a retrospective journey through the band's illustrious career, spanning from their early jangly pop roots to their later experimental and introspective phases. This compilation album showcases R.E.M.'s evolution as musical pioneers, offering a comprehensive collection of their most iconic hits alongside rare gems and unreleased tracks. With its diverse range of sounds and lyrical depth, it serves as a testament to R.E.M.'s enduring influence and artistic legacy in the world of alternative rock.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">R.E.M.</li>
+                      <li class="list-group-item">alternative rock/folk rock/college rock/jangle pop</li>
+                      <li class="list-group-item">length: 151:24</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Copia e incolla del 'div' con classe 'container'-->
+    <div id="tredici" class="container mt-5 py-3">
+        <div class="row">
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/The-Queen-is-Dead-cover.png" class="card-img-top" alt="album The Queen Is Dead - the Smiths">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">The Queen Is Dead</h5>
+                      <p class="card-text">The Queen Is Dead by The Smiths is a seminal masterpiece that epitomizes the band's unique blend of poetic lyricism, jangly guitars, and Morrissey's distinctive vocals. From the satirical social commentary of the title track to the melancholic beauty of "There Is a Light That Never Goes Out," the album captivates listeners with its raw emotion and infectious melodies. With its timeless relevance and unapologetic attitude, it solidifies The Smiths' status as one of the most influential bands in alternative music history.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">the Smiths</li>
+                      <li class="list-group-item">indie pop/jangle pop/alternative rock/indie rock/post-punk</li>
+                      <li class="list-group-item">length: 36:48</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/SystemofaDownToxicityalbumcover.jpg" class="card-img-top" alt="album Toxicity - System of a Down">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Toxicity</h5>
+                      <p class="card-text">Toxicity by System of a Down is a frenetic and politically charged rollercoaster ride, blending aggressive metal riffs with eclectic influences ranging from Armenian folk to punk rock. From the explosive energy of "Chop Suey!" to the dark introspection of "Aerials," the album showcases the band's musical prowess and knack for delivering thought-provoking lyrics. With its unapologetic intensity and genre-defying sound, Toxicity remains a landmark album that continues to resonate with listeners worldwide.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">System of a Down</li>
+                      <li class="list-group-item">alternative metal/nu metal</li>
+                      <li class="list-group-item">length: 44:02</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/The_Eminem_Show.jpg" class="card-img-top" alt="album The Eminem Show - Eminem">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">The Eminem Show</h5>
+                      <p class="card-text">The Eminem Show by Eminem is a tour de force of raw emotion, lyrical prowess, and introspective storytelling, showcasing the artist's evolution as both a rapper and a cultural icon. From the defiant anthems like "Without Me" to the poignant reflections of "Cleaning Out My Closet," the album offers a gripping narrative that delves into Eminem's personal struggles, societal critiques, and triumphs. With its innovative production and razor-sharp lyricism, "The Eminem Show" solidifies Eminem's place as one of the most influential and controversial figures in hip-hop history.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Eminem</li>
+                      <li class="list-group-item">hip hop/rap rock/political hip hop</li>
+                      <li class="list-group-item">length: 77:30</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card mb-3">
+                    <img src="assets/Graceland_cover_-_Paul_Simon.jpg" class="card-img-top" alt="album Graceland - Paul Simon">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Graceland</h5>
+                      <p class="card-text">Graceland by Paul Simon is a vibrant fusion of American folk, African rhythms, and global influences, showcasing Simon's musical exploration and cross-cultural collaboration. From the infectious groove of the title track to the heartfelt storytelling of "Diamonds on the Soles of Her Shoes," the album is a celebration of diversity and unity. With its infectious melodies and thoughtful lyrics, Graceland remains a timeless classic that continues to inspire and resonate with audiences worldwide.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Paul Simon</li>
+                      <li class="list-group-item">worldbeat/pop/rock folk/afropop</li>
+                      <li class="list-group-item">length: 43:18</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ALBUM preferito-->
+    <!--Ho aggiunto un po di padding al div con classe container-->
+    <div class="container py-3">
+      <div class="card mb-3">
+        <img src="assets/BobMarley-Legend.jpg" class="card-img-top" alt="compilation album Legend - Bob Marley">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Compilation album Legend - Bob Marley</h5>
+          <p class="card-text">Legend by Bob Marley, released posthumously in 1984, is a timeless compilation album showcasing Marley's most iconic reggae hits. From the uplifting "One Love" to the anthemic "No Woman, No Cry," the album captures Marley's message of love, unity, and social justice. Its universal appeal and enduring influence make it a definitive collection for both longtime fans and newcomers to reggae music.</p>
+          <p class="card-text"><small class="text-body-secondary">Genre: Roots reggae</small></p>
+        </div>
+      </div>
+      <!--Tracce dell'album-->
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Is This Love</div>
+            Kaya (1978)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:50</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">No Woman, No Cry (Live)</div>
+            Live! (1975)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">7:08</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Could You Be Loved</div>
+            Uprising (1980)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:57</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Three Little Birds</div>
+            Exodus (1977)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Buffalo Soldier (7" Edit)</div>
+            Confrontation (1983)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">2:43</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Get Up, Stand Up</div>
+            Burnin' (1973)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:17</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Stir It Up (Edit)</div>
+            Catch a Fire (1973)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:38</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">One Love/People Get Ready</div>
+            Exodus (1977)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">2:52</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">I Shot the Sheriff (Edit)</div>
+            Burnin' (1973)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:46</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Waiting in Vain</div>
+            Exodus (1977)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">4:16</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Redemption Song</div>
+            Uprising (1980)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:48</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Satisfy My Soul</div>
+            Kaya (1978)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">4:30</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Exodus (7" Edit)</div>
+            Exodus (1977)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">4:16</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Jamming (7" Edit)</div>
+            Exodus (1977)
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3:17</span>
+        </li>
+      </ol>
+      <!--Aggiungo il seguente paragrafo per inserire la durata dell'album-->
+      <div class="card px-2"><p class="card-text"><small class="text-body-secondary">Length of the album: 43:08</small></p></div>
+    </div>
+    <!--Aggiunto un div con classe "container" per aggiungerci all'interno un paragrafo con qualche riga in riferimento a "about us"-->
+    <!--Al div aggiungo un colore di background predefinito, rounded-2 per arrotondare un pò i bordi, un margine superiore e un padding (superiore e inferiore)-->
+    <div class="container bg-warning rounded-2 mt-3 py-3">
+      <h1 id="about" class="display-6">About us</h1>
+      <p class="fw-semibold"> At Vinil Vibes, we're more than just a music website; we're a passionate community of audiophiles dedicated to celebrating the timeless allure of vinyl records. With a curated selection spanning genres from classic rock to jazz and beyond, we aim to provide enthusiasts with a haven where they can discover, explore, and indulge in the rich tapestry of musical history. Our mission is to foster a deeper connection between listeners and the music they love, offering not just a platform for consumption, but a gateway to immersive sonic experiences. Join us on a journey where every crackle and pop tells a story, and where the warmth of analog sound resonates with the soul.</p>
+    </div>
+    <!--Inserisco il tag script per il Java Script di Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
